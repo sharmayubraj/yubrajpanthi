@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA Compatible " content="IE-edge">
+<meta name="viewport" content="width=device-width,intital-scale=1.0">
+<title>Portfolio Website</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Awards</a></li>
+                    <li><a href="#">contact</a></li>
+
+                </ul>
+            </nav>
+            <div class="header-text"></div>
+        
+            <h1>Hi, I am <span>Yubraj</span><br>Panthi from Nepal</h1>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                <img src="images/user.png
+                ">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>
+                        Hello Everyone Myself Yubraj Panthi . Currently reading at grade 12 at NHI Institue. My hobbies are reading books, quiz and web designing. I believe that deep inside us, we all strive to move forward and up, to scale new heights.
+
+                    </p>
+                    <div class="tab-titles">
+<p class="tab-links active-link" onclick="opentab('skills')"> Skills</p>
+<p class="tab-links"onclick="opentab('Experiences')"> Experiences</p>
+<p class="tab-links"onclick="opentab('Education')"> Education</p>
+
+
+                    </div>
+                    <div class="tab-contents active-tab " id="skills">
+                        <ul>
+                            <li><Span> Leadership</Span><br> skill </li>
+                            <li><Span> Web designing</Span><br> skill </li>
+                            <li><Span>Team work </Span><br> and Flexibility</li>
+                            <li><Span> Research</Span> </li>
+
+
+
+                        </ul>
+
+                    </div>
+                    <div class="tab-contents"id="Experiences">
+                        <ul>
+                            <li><Span>  2022-Current</Span><br> President at Interact Club of Central Butwal </li>
+                      <li><Span> 2019-2020</Span><br> Managing Director at -NHISQC </li>
+                            <li><Span>2021-Current </Span><br> Member at NHI STEM</li>
+                            <li><Span>2021-2022 </Span><br> Member at lofa Butwal</li>
+                    
+
+
+
+
+
+                        </ul>
+                        
+                    </div>
+                    <div class="tab-contents"id="Education">
+                        <ul>
+                            <li><Span> 2017-Current</Span><br> Grade 7- Current at NHI Instutite </li>
+                            <li><Span> 2012-2017</Span><br> Grade 2-Grade 6 At Malika English Boarding School</li>
+                            <li><Span>20010-21012 </Span><br> Kalika English Boarding School</li>
+
+
+
+
+                        </ul>
+                        
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+    <div id="Awards">
+        <div class="container">
+            <h1 class="sub-title">Some Awards</h1>
+            <div class="Awards-list">
+                <div class="work">
+                    <img src="images/work-1.jpg">
+                </div>
+                <div class="work">
+                    <img src="images/work-2.jpg">
+                    </div>
+                    <div class="work">
+                        <img src="images/work-3.jpg">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="contact">
+        <div class="conatiner">
+            <div class="row">
+                <div class="contact-left">
+<h1 class=""sub-title"> Conatct me</h1>
+<p><i class="fa fa-envelope" aria-hidden="true"></i>
+</i>
+    yubrajsharma143@gmail.com</p>
+<p><i class='fa fa-phone'></i>9866413389</p>
+<div class="social-icons">
+    <a href="https://www.facebook.com/yubraj.panthi.31/" class="fa fa-facebook"></a>
+    <a href="https://www.instagram.com/yubraj.panthi/" class="fa fa-instagram"></a>
+    <a href="https://twitter.com/Yubrajpanthi5" class="fa fa-twitter"></a>
+
+
+
+</div>
+
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    
+<script>
+     var tablinks= document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+    
+for(tabcontent of tabcontents){
+    tabcontent.classList.remove("active-tab");
+}
+event.currentTarget.classList.add("active-link");
+document.getElementById(tabname).classList.add("active-tab");
+        
+        
+    }
+</script>>
+    </body>
+</html>
