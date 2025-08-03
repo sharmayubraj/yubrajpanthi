@@ -3,322 +3,468 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Yubraj Panthi - Student, Leader, and Web Designer from Nepal. Passionate about technology, community service, and making a positive impact.">
-    <meta name="keywords" content="Yubraj Panthi, Portfolio, Web Designer, Student Leader, Nepal, Technology, Community Service">
-    <meta name="author" content="Yubraj Panthi">
+    <meta name="description" content="Portfolio of an aspiring Civil Engineer - showcasing projects, skills, and academic achievements">
+    <meta name="keywords" content="Civil Engineer, Portfolio, Engineering Student, Construction, Infrastructure">
+    <meta name="author" content="Your Name">
     <meta name="robots" content="index, follow">
     
     <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="Yubraj Panthi - Portfolio">
-    <meta property="og:description" content="Student, Leader, and Web Designer from Nepal">
+    <meta property="og:title" content="Your Name - Civil Engineer Portfolio">
+    <meta property="og:description" content="Aspiring Civil Engineer showcasing projects and skills">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://yubrajpanthi.com.np">
-    <meta property="og:image" content="images/user.png">
+    <meta property="og:image" content="assets/profile-photo.jpg">
     
-    <!-- Twitter Card Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Yubraj Panthi - Portfolio">
-    <meta name="twitter:description" content="Student, Leader, and Web Designer from Nepal">
-    <meta name="twitter:image" content="images/user.png">
-    
-    <title>Yubraj Panthi - Portfolio | Student Leader & Web Designer</title>
+    <title>Your Name - Civil Engineer Portfolio</title>
     
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
     
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- Preconnect for Performance -->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
-    <!-- Theme Color -->
-    <meta name="theme-color" content="#0ea5e9">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="container">
-            <div class="nav-container">
-                <a href="#hero" class="logo">Yubraj Panthi</a>
+            <div class="nav-content">
+                <a href="#home" class="logo">Your Name</a>
                 
                 <ul class="nav-menu" id="nav-menu">
-                    <li><a href="#hero" class="nav-link">Home</a></li>
+                    <li><a href="#home" class="nav-link">Home</a></li>
                     <li><a href="#about" class="nav-link">About</a></li>
-                    <li><a href="#awards" class="nav-link">Awards</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#education" class="nav-link">Education</a></li>
                     <li><a href="#contact" class="nav-link">Contact</a></li>
                 </ul>
                 
-                <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
+                <div class="nav-actions">
+                    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero" id="hero">
+    <section class="hero" id="home">
         <div class="container">
-            <div class="hero-content">
-                <div class="hero-badge">
-                    <span>Available for opportunities</span>
+            <div class="hero-content" data-aos="fade-up">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="text-accent">Your Name</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Aspiring Civil Engineer | Engineering Student
+                    </p>
+                    <p class="hero-description">
+                        Passionate about designing sustainable infrastructure and creating innovative solutions 
+                        for tomorrow's construction challenges.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="assets/resume.pdf" class="btn btn-primary" download>
+                            <i class="fas fa-download"></i>
+                            Download Resume
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <i class="fas fa-envelope"></i>
+                            Get In Touch
+                        </a>
+                    </div>
                 </div>
-                
-                <h1 class="hero-title">
-                    Hello, I'm <span class="text-gradient">Yubraj Panthi</span>
-                </h1>
-                
-                <p class="hero-subtitle">
-                    A passionate student, leader, and web designer from Nepal, dedicated to making a positive impact through technology and community service. Currently studying at NHI Institute and leading various organizations.
-                </p>
-                
-                <div class="hero-actions">
-                    <a href="#about" class="btn btn-primary">
-                        <i class="fas fa-user"></i>
-                        Discover My Story
-                    </a>
-                    <a href="#contact" class="btn btn-secondary">
-                        <i class="fas fa-envelope"></i>
-                        Let's Connect
-                    </a>
+                <div class="hero-image" data-aos="fade-left" data-aos-delay="200">
+                    <div class="image-wrapper">
+                        <img src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Professional headshot" />
+                        <div class="image-decoration"></div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section class="about section" id="about">
+    <!-- About Me Section -->
+    <section class="about" id="about">
         <div class="container">
-            <div class="section-header fade-in">
-                <span class="section-badge">Get to know me</span>
+            <div class="section-header" data-aos="fade-up">
                 <h2 class="section-title">About Me</h2>
-                <p class="section-description">
-                    Discover my journey, skills, and the experiences that have shaped me into who I am today.
-                </p>
+                <p class="section-subtitle">Get to know me better</p>
             </div>
             
             <div class="about-content">
-                <div class="about-image slide-in-left">
-                    <div class="about-image-wrapper">
-                        <img src="images/user.png" alt="Yubraj Panthi - Student Leader and Web Designer">
-                    </div>
-                    <div class="about-decorations"></div>
+                <div class="about-image" data-aos="fade-right">
+                    <img src="https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&cs=tinysrgb&w=500" alt="About me photo" />
                 </div>
                 
-                <div class="about-text slide-in-right">
+                <div class="about-text" data-aos="fade-left">
+                    <h3>Background & Motivation</h3>
                     <p>
-                        Hello Everyone! I'm Yubraj Panthi, currently studying in grade 12 at NHI Institute. 
-                        I'm passionate about leadership, web design, and making a positive impact in my community. 
-                        My hobbies include reading books, participating in quizzes, and creating beautiful web experiences.
+                        I'm a dedicated Civil Engineering student with a passion for sustainable infrastructure 
+                        development and innovative construction solutions. My journey in engineering began with 
+                        a fascination for how structures shape our world and improve people's lives.
+                    </p>
+                    <p>
+                        Throughout my academic journey, I've developed strong analytical skills and a deep 
+                        understanding of structural design principles. I'm particularly interested in green 
+                        building technologies and smart city development, believing that engineering should 
+                        serve both functionality and environmental responsibility.
                     </p>
                     
-                    <p>
-                        I believe that deep inside us, we all strive to move forward and up, to scale new heights. 
-                        Through my various roles in different organizations, I've learned the importance of teamwork, 
-                        dedication, and continuous learning. Every challenge is an opportunity to grow and contribute meaningfully to society.
-                    </p>
-
-                    <div class="tabs">
-                        <div class="tab-list" role="tablist">
-                            <button class="tab-button active" role="tab" data-tab="skills" aria-selected="true">
-                                <i class="fas fa-code"></i> Skills
-                            </button>
-                            <button class="tab-button" role="tab" data-tab="experience" aria-selected="false">
-                                <i class="fas fa-briefcase"></i> Experience
-                            </button>
-                            <button class="tab-button" role="tab" data-tab="education" aria-selected="false">
-                                <i class="fas fa-graduation-cap"></i> Education
-                            </button>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">15+</div>
+                            <div class="stat-label">Projects Completed</div>
                         </div>
+                        <div class="stat-item">
+                            <div class="stat-number">3.8</div>
+                            <div class="stat-label">GPA</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">2+</div>
+                            <div class="stat-label">Years Experience</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                        <div class="tab-panel active" id="skills" role="tabpanel">
-                            <div class="tab-content">
-                                <div class="tab-item">
-                                    <div class="tab-item-header">
-                                        <div class="tab-item-icon">
-                                            <i class="fas fa-users"></i>
-                                        </div>
-                                        <div>
-                                            <div class="tab-item-title">Leadership</div>
-                                            <div class="tab-item-subtitle">Team Management</div>
-                                        </div>
-                                    </div>
-                                    <p class="tab-item-description">
-                                        Strong leadership skills developed through various organizational roles, 
-                                        including team management, strategic planning, and community engagement.
-                                    </p>
-                                </div>
-                                
-                                <div class="tab-item">
-                                    <div class="tab-item-header">
-                                        <div class="tab-item-icon">
-                                            <i class="fas fa-palette"></i>
-                                        </div>
-                                        <div>
-                                            <div class="tab-item-title">Web Design</div>
-                                            <div class="tab-item-subtitle">UI/UX Design</div>
-                                        </div>
-                                    </div>
-                                    <p class="tab-item-description">
-                                        Creating beautiful and functional web experiences with modern design principles, 
-                                        responsive layouts, and user-centered approach.
-                                    </p>
-                                </div>
-                                
-                                <div class="tab-item">
-                                    <div class="tab-item-header">
-                                        <div class="tab-item-icon">
-                                            <i class="fas fa-handshake"></i>
-                                        </div>
-                                        <div>
-                                            <div class="tab-item-title">Teamwork & Flexibility</div>
-                                            <div class="tab-item-subtitle">Collaboration</div>
-                                        </div>
-                                    </div>
-                                    <p class="tab-item-description">
-                                        Excellent collaboration and adaptability skills, with experience working 
-                                        in diverse teams and adapting to changing environments.
-                                    </p>
-                                </div>
-                                
-                                <div class="tab-item">
-                                    <div class="tab-item-header">
-                                        <div class="tab-item-icon">
-                                            <i class="fas fa-search"></i>
-                                        </div>
-                                        <div>
-                                            <div class="tab-item-title">Research</div>
-                                            <div class="tab-item-subtitle">Analysis & Innovation</div>
-                                        </div>
-                                    </div>
-                                    <p class="tab-item-description">
-                                        Strong analytical and research capabilities, with a passion for 
-                                        discovering new solutions and innovative approaches to problems.
-                                    </p>
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Skills & Expertise</h2>
+                <p class="section-subtitle">Technical and professional competencies</p>
+            </div>
+            
+            <div class="skills-grid">
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+                    <div class="category-header">
+                        <i class="fas fa-laptop-code"></i>
+                        <h3>Software Skills</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">AutoCAD</span>
+                                <span class="skill-level">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Revit</span>
+                                <span class="skill-level">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">ETABS</span>
+                                <span class="skill-level">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">MATLAB</span>
+                                <span class="skill-level">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                    <div class="category-header">
+                        <i class="fas fa-tools"></i>
+                        <h3>Technical Skills</h3>
+                    </div>
+                    <div class="skills-badges">
+                        <span class="skill-badge">Structural Analysis</span>
+                        <span class="skill-badge">Construction Management</span>
+                        <span class="skill-badge">Project Planning</span>
+                        <span class="skill-badge">Site Surveying</span>
+                        <span class="skill-badge">Material Testing</span>
+                        <span class="skill-badge">Quality Control</span>
+                        <span class="skill-badge">Cost Estimation</span>
+                        <span class="skill-badge">Building Codes</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+                    <div class="category-header">
+                        <i class="fas fa-users"></i>
+                        <h3>Soft Skills</h3>
+                    </div>
+                    <div class="soft-skills">
+                        <div class="soft-skill-item">
+                            <i class="fas fa-comments"></i>
+                            <span>Communication</span>
+                        </div>
+                        <div class="soft-skill-item">
+                            <i class="fas fa-users-cog"></i>
+                            <span>Teamwork</span>
+                        </div>
+                        <div class="soft-skill-item">
+                            <i class="fas fa-lightbulb"></i>
+                            <span>Problem Solving</span>
+                        </div>
+                        <div class="soft-skill-item">
+                            <i class="fas fa-user-tie"></i>
+                            <span>Leadership</span>
+                        </div>
+                        <div class="soft-skill-item">
+                            <i class="fas fa-clock"></i>
+                            <span>Time Management</span>
+                        </div>
+                        <div class="soft-skill-item">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Analytical Thinking</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Showcasing my engineering work and achievements</p>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-image">
+                        <img src="https://images.pexels.com/photos/3862132/pexels-photo-3862132.jpeg?auto=compress&cs=tinysrgb&w=500" alt="Sustainable Building Design" />
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" aria-label="View project">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-link" aria-label="View on GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Sustainable Building Design</h3>
+                        <p class="project-description">
+                            Designed an eco-friendly residential complex incorporating green building 
+                            technologies, renewable energy systems, and sustainable materials.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">AutoCAD</span>
+                            <span class="tech-tag">Revit</span>
+                            <span class="tech-tag">Energy Analysis</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-image">
+                        <img src="https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=500" alt="Bridge Structural Analysis" />
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" aria-label="View project">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-link" aria-label="View on GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Bridge Structural Analysis</h3>
+                        <p class="project-description">
+                            Comprehensive structural analysis of a cable-stayed bridge design, 
+                            including load calculations, stress analysis, and safety factor assessments.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">ETABS</span>
+                            <span class="tech-tag">MATLAB</span>
+                            <span class="tech-tag">Structural Analysis</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-image">
+                        <img src="https://images.pexels.com/photos/1105766/pexels-photo-1105766.jpeg?auto=compress&cs=tinysrgb&w=500" alt="Urban Planning Project" />
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" aria-label="View project">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-link" aria-label="View on GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Smart City Infrastructure</h3>
+                        <p class="project-description">
+                            Urban planning project focusing on smart city infrastructure, 
+                            including traffic management systems and sustainable transportation networks.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">GIS</span>
+                            <span class="tech-tag">Urban Planning</span>
+                            <span class="tech-tag">Traffic Analysis</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="project-image">
+                        <img src="https://images.pexels.com/photos/3862379/pexels-photo-3862379.jpeg?auto=compress&cs=tinysrgb&w=500" alt="Construction Management System" />
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" aria-label="View project">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-link" aria-label="View on GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Construction Management System</h3>
+                        <p class="project-description">
+                            Digital project management solution for construction sites, 
+                            featuring progress tracking, resource allocation, and quality control modules.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Project Management</span>
+                            <span class="tech-tag">Database Design</span>
+                            <span class="tech-tag">Quality Control</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="education" id="education">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Academic Status</h2>
+                <p class="section-subtitle">Educational background and achievements</p>
+            </div>
+            
+            <div class="education-timeline">
+                <div class="timeline-item" data-aos="fade-right" data-aos-delay="100">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Bachelor of Civil Engineering</h3>
+                            <span class="timeline-date">2021 - 2025</span>
+                        </div>
+                        <div class="timeline-details">
+                            <p class="institution">University of Engineering & Technology</p>
+                            <p class="gpa">Current GPA: 3.8/4.0</p>
+                            <div class="achievements">
+                                <h4>Key Achievements:</h4>
+                                <ul>
+                                    <li>Dean's List for 4 consecutive semesters</li>
+                                    <li>Outstanding Student Award in Structural Engineering</li>
+                                    <li>President of Civil Engineering Student Society</li>
+                                    <li>Winner of National Bridge Design Competition 2023</li>
+                                </ul>
+                            </div>
+                            <div class="relevant-courses">
+                                <h4>Relevant Coursework:</h4>
+                                <div class="course-tags">
+                                    <span class="course-tag">Structural Analysis</span>
+                                    <span class="course-tag">Construction Management</span>
+                                    <span class="course-tag">Geotechnical Engineering</span>
+                                    <span class="course-tag">Transportation Engineering</span>
+                                    <span class="course-tag">Environmental Engineering</span>
+                                    <span class="course-tag">Project Management</span>
                                 </div>
                             </div>
                         </div>
-
-                        <div class="tab-panel" id="experience" role="tabpanel">
-                            <div class="tab-content">
-                                <div class="tab-item">
-                                    <div class="tab-item-header">
-                                        <div class="tab-item-icon">
-                                            <i class="fas fa-crown"></i>
-                                        </div>
-                                        <div>
-                                            <div class="tab-item-title">President</div>
-                                            <div class="tab-item-subtitle">2022 - Current</div>
-                                        </div>
-                                    </div>
-                                    <p class="tab-item-description">
-                                        Leading the Interact Club of Central Butwal, organizing community service 
-                                        projects and youth development programs.
-                                    </p>
-                                </div>
-                                
-                                <div class="tab-item">
-                                    <div class="tab-item-header">
-                                        <div class="tab-item-icon">
-                                            <i class="fas fa-user-tie"></i>
-                                        </div>
-                                        <div>
-                                            <div class="tab-item-title">Managing Director</div>
-                                            <div class="tab-item-subtitle">2019 - 2020</div>
-                                        </div>
-                                    </div>
-                                    <p class="tab-item-description">
-                                        Managed operations and strategic initiatives at NHISQC, 
-                                        focusing on quality improvement and organizational development.
-                                    </p>
-                                </div>
-                                
-                                <div class="tab-item">
-                                    <div class="tab-item-header">
-                                        <div class="tab-item-icon">
-                                            <i class="fas fa-star"></i>
-                                        </div>
-                                        <div>
-                                            <div class="tab-item-title">Vice President</div>
-                                            <div class="tab-item-subtitle">2021 - Current</div>
-                                        </div>
-                                    </div>
-                                    <p class="tab-item-description">
-                                        Supporting STEM education initiatives at NHI STEM, promoting 
-                                        science and technology among students.
-                                    </p>
-                                </div>
-                                
-                                <div class="tab-item">
-                                    <div class="tab-item-header">
-                                        <div class="tab-item-icon">
-                                            <i class="fas fa-users"></i>
-                                        </div>
-                                        <div>
-                                            <div class="tab-item-title">Member</div>
-                                            <div class="tab-item-subtitle">2021 - 2022</div>
-                                        </div>
-                                    </div>
-                                    <p class="tab-item-description">
-                                        Active member of LOFA Butwal, contributing to local community 
-                                        development and social welfare initiatives.
-                                    </p>
-                                </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-aos="fade-left" data-aos-delay="200">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Higher Secondary Education</h3>
+                            <span class="timeline-date">2019 - 2021</span>
+                        </div>
+                        <div class="timeline-details">
+                            <p class="institution">Science College</p>
+                            <p class="gpa">Grade: A+ (90.5%)</p>
+                            <div class="achievements">
+                                <h4>Key Achievements:</h4>
+                                <ul>
+                                    <li>Top 5% of graduating class</li>
+                                    <li>Mathematics Olympiad Regional Winner</li>
+                                    <li>Science Fair First Prize</li>
+                                </ul>
                             </div>
                         </div>
-
-                        <div class="tab-panel" id="education" role="tabpanel">
-                            <div class="tab-content">
-                                <div class="tab-item">
-                                    <div class="tab-item-header">
-                                        <div class="tab-item-icon">
-                                            <i class="fas fa-school"></i>
-                                        </div>
-                                        <div>
-                                            <div class="tab-item-title">NHI Institute</div>
-                                            <div class="tab-item-subtitle">2017 - Current</div>
-                                        </div>
-                                    </div>
-                                    <p class="tab-item-description">
-                                        Currently pursuing higher secondary education (Grade 7 - Current), 
-                                        actively participating in various academic and extracurricular activities.
-                                    </p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-aos="fade-right" data-aos-delay="300">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Certifications & Training</h3>
+                            <span class="timeline-date">2022 - Present</span>
+                        </div>
+                        <div class="timeline-details">
+                            <div class="certifications">
+                                <div class="cert-item">
+                                    <i class="fas fa-certificate"></i>
+                                    <span>AutoCAD Professional Certification</span>
                                 </div>
-                                
-                                <div class="tab-item">
-                                    <div class="tab-item-header">
-                                        <div class="tab-item-icon">
-                                            <i class="fas fa-book"></i>
-                                        </div>
-                                        <div>
-                                            <div class="tab-item-title">Malika English Boarding School</div>
-                                            <div class="tab-item-subtitle">2012 - 2017</div>
-                                        </div>
-                                    </div>
-                                    <p class="tab-item-description">
-                                        Completed primary education (Grade 2 - Grade 6), building strong 
-                                        foundational skills in academics and personal development.
-                                    </p>
+                                <div class="cert-item">
+                                    <i class="fas fa-certificate"></i>
+                                    <span>Project Management Professional (PMP) - In Progress</span>
                                 </div>
-                                
-                                <div class="tab-item">
-                                    <div class="tab-item-header">
-                                        <div class="tab-item-icon">
-                                            <i class="fas fa-seedling"></i>
-                                        </div>
-                                        <div>
-                                            <div class="tab-item-title">Kalika English Boarding School</div>
-                                            <div class="tab-item-subtitle">2010 - 2012</div>
-                                        </div>
-                                    </div>
-                                    <p class="tab-item-description">
-                                        Started my educational journey, developing early learning skills 
-                                        and discovering my passion for knowledge and growth.
-                                    </p>
+                                <div class="cert-item">
+                                    <i class="fas fa-certificate"></i>
+                                    <span>LEED Green Associate</span>
+                                </div>
+                                <div class="cert-item">
+                                    <i class="fas fa-certificate"></i>
+                                    <span>Construction Safety Training</span>
                                 </div>
                             </div>
                         </div>
@@ -328,82 +474,54 @@
         </div>
     </section>
 
-    <!-- Awards Section -->
-    <section class="awards section" id="awards">
+    <!-- Resume Section -->
+    <section class="resume-section" id="resume">
         <div class="container">
-            <div class="section-header fade-in">
-                <span class="section-badge">Recognition</span>
-                <h2 class="section-title">Awards & Achievements</h2>
-                <p class="section-description">
-                    A showcase of the recognition and achievements I've earned through dedication and hard work.
-                </p>
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Resume</h2>
+                <p class="section-subtitle">Download or preview my complete resume</p>
             </div>
             
-            <div class="awards-grid">
-                <article class="award-card fade-in">
-                    <div class="award-image">
-                        <img src="images/work-1.jpg" alt="Leadership Excellence Award" loading="lazy">
+            <div class="resume-content" data-aos="fade-up" data-aos-delay="200">
+                <div class="resume-preview">
+                    <div class="resume-placeholder">
+                        <i class="fas fa-file-pdf"></i>
+                        <h3>Resume Preview</h3>
+                        <p>Click to download the full PDF version</p>
                     </div>
-                    <div class="award-content">
-                        <h3 class="award-title">Leadership Excellence</h3>
-                        <p class="award-description">
-                            Recognition for outstanding leadership in community service and student organizations. 
-                            This award acknowledges my commitment to inspiring others and driving positive change.
-                        </p>
-                    </div>
-                </article>
+                </div>
                 
-                <article class="award-card fade-in">
-                    <div class="award-image">
-                        <img src="images/work-2.jpg" alt="Academic Achievement Award" loading="lazy">
-                    </div>
-                    <div class="award-content">
-                        <h3 class="award-title">Academic Achievement</h3>
-                        <p class="award-description">
-                            Excellence in academic performance and contribution to educational initiatives. 
-                            This recognition reflects my dedication to learning and academic excellence.
-                        </p>
-                    </div>
-                </article>
-                
-                <article class="award-card fade-in">
-                    <div class="award-image">
-                        <img src="images/work-3.jpg" alt="Community Service Award" loading="lazy">
-                    </div>
-                    <div class="award-content">
-                        <h3 class="award-title">Community Service</h3>
-                        <p class="award-description">
-                            Outstanding contribution to community development and social service projects. 
-                            This award celebrates my commitment to making a positive impact in society.
-                        </p>
-                    </div>
-                </article>
+                <div class="resume-actions">
+                    <a href="assets/resume.pdf" class="btn btn-primary" download>
+                        <i class="fas fa-download"></i>
+                        Download PDF
+                    </a>
+                    <a href="assets/resume.pdf" class="btn btn-secondary" target="_blank">
+                        <i class="fas fa-eye"></i>
+                        Preview Online
+                    </a>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section class="contact section" id="contact">
+    <section class="contact" id="contact">
         <div class="container">
-            <div class="section-header fade-in">
-                <span class="section-badge">Let's connect</span>
+            <div class="section-header" data-aos="fade-up">
                 <h2 class="section-title">Get In Touch</h2>
-                <p class="section-description">
-                    Ready to collaborate or just want to say hello? I'd love to hear from you and discuss new opportunities.
-                </p>
+                <p class="section-subtitle">Let's discuss opportunities and collaborations</p>
             </div>
             
             <div class="contact-content">
-                <div class="contact-info slide-in-left">
-                    <h3>Let's Start a Conversation</h3>
-                    
+                <div class="contact-info" data-aos="fade-right">
                     <div class="contact-item">
                         <div class="contact-icon">
                             <i class="fas fa-envelope"></i>
                         </div>
                         <div class="contact-details">
-                            <h4>Email Address</h4>
-                            <p>yubrajsharma143@gmail.com</p>
+                            <h4>Email</h4>
+                            <p>your.email@example.com</p>
                         </div>
                     </div>
                     
@@ -412,8 +530,8 @@
                             <i class="fas fa-phone"></i>
                         </div>
                         <div class="contact-details">
-                            <h4>Phone Number</h4>
-                            <p>+977 9866413389</p>
+                            <h4>Phone</h4>
+                            <p>+1 (555) 123-4567</p>
                         </div>
                     </div>
                     
@@ -423,52 +541,48 @@
                         </div>
                         <div class="contact-details">
                             <h4>Location</h4>
-                            <p>Butwal, Nepal</p>
+                            <p>Your City, Country</p>
                         </div>
                     </div>
-
+                    
                     <div class="social-links">
-                        <a href="https://www.facebook.com/yubraj.panthi.31/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Facebook">
-                            <i class="fab fa-facebook-f"></i>
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
                         </a>
-                        <a href="https://www.instagram.com/yubraj.panthi/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">
-                            <i class="fab fa-instagram"></i>
+                        <a href="#" class="social-link" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
                         </a>
-                        <a href="https://twitter.com/Yubrajpanthi5" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Twitter">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="mailto:yubrajsharma143@gmail.com" class="social-link" aria-label="Email">
+                        <a href="#" class="social-link" aria-label="Email">
                             <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
                         </a>
                     </div>
                 </div>
-
-                <form class="contact-form slide-in-right" id="contact-form" novalidate>
+                
+                <form class="contact-form" id="contact-form" data-aos="fade-left">
                     <div class="form-group">
-                        <label for="name" class="form-label">Your Name *</label>
-                        <input type="text" id="name" name="name" class="form-input" required aria-describedby="name-error">
-                        <div id="name-error" class="error-message" role="alert"></div>
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
                     </div>
                     
                     <div class="form-group">
-                        <label for="email" class="form-label">Your Email *</label>
-                        <input type="email" id="email" name="email" class="form-input" required aria-describedby="email-error">
-                        <div id="email-error" class="error-message" role="alert"></div>
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
                     </div>
                     
                     <div class="form-group">
-                        <label for="subject" class="form-label">Subject *</label>
-                        <input type="text" id="subject" name="subject" class="form-input" required aria-describedby="subject-error">
-                        <div id="subject-error" class="error-message" role="alert"></div>
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
                     </div>
                     
                     <div class="form-group">
-                        <label for="message" class="form-label">Your Message *</label>
-                        <textarea id="message" name="message" class="form-textarea" required aria-describedby="message-error"></textarea>
-                        <div id="message-error" class="error-message" role="alert"></div>
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
                     </div>
                     
-                    <button type="submit" class="btn btn-primary form-submit">
+                    <button type="submit" class="btn btn-primary">
                         <i class="fas fa-paper-plane"></i>
                         Send Message
                     </button>
@@ -480,401 +594,48 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>© 2024 Yubraj Panthi. All rights reserved. | Made with ❤️ in Nepal</p>
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Your Name</h3>
+                    <p>Aspiring Civil Engineer passionate about sustainable infrastructure and innovative construction solutions.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h4>Connect</h4>
+                        <div class="footer-social">
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Your Name. All rights reserved.</p>
+            </div>
         </div>
     </footer>
 
-    <!-- JavaScript -->
-    <script>
-        // Enhanced JavaScript with better performance and accessibility
-        
-        // Utility Functions
-        const $ = (selector) => document.querySelector(selector);
-        const $$ = (selector) => document.querySelectorAll(selector);
-        
-        // Debounce function for performance
-        const debounce = (func, wait) => {
-            let timeout;
-            return function executedFunction(...args) {
-                const later = () => {
-                    clearTimeout(timeout);
-                    func(...args);
-                };
-                clearTimeout(timeout);
-                timeout = setTimeout(later, wait);
-            };
-        };
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scroll-to-top" aria-label="Scroll to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
 
-        // Mobile Navigation
-        class MobileNav {
-            constructor() {
-                this.navToggle = $('#nav-toggle');
-                this.navMenu = $('#nav-menu');
-                this.navLinks = $$('.nav-link');
-                this.init();
-            }
-
-            init() {
-                this.navToggle.addEventListener('click', () => this.toggleMenu());
-                this.navLinks.forEach(link => {
-                    link.addEventListener('click', () => this.closeMenu());
-                });
-                
-                // Close menu on escape key
-                document.addEventListener('keydown', (e) => {
-                    if (e.key === 'Escape' && this.navMenu.classList.contains('active')) {
-                        this.closeMenu();
-                    }
-                });
-            }
-
-            toggleMenu() {
-                this.navToggle.classList.toggle('active');
-                this.navMenu.classList.toggle('active');
-                document.body.style.overflow = this.navMenu.classList.contains('active') ? 'hidden' : '';
-            }
-
-            closeMenu() {
-                this.navToggle.classList.remove('active');
-                this.navMenu.classList.remove('active');
-                document.body.style.overflow = '';
-            }
-        }
-
-        // Navbar Scroll Effect
-        class NavbarScroll {
-            constructor() {
-                this.navbar = $('#navbar');
-                this.init();
-            }
-
-            init() {
-                const handleScroll = debounce(() => {
-                    if (window.scrollY > 100) {
-                        this.navbar.classList.add('scrolled');
-                    } else {
-                        this.navbar.classList.remove('scrolled');
-                    }
-                }, 10);
-
-                window.addEventListener('scroll', handleScroll);
-            }
-        }
-
-        // Smooth Scrolling
-        class SmoothScroll {
-            constructor() {
-                this.init();
-            }
-
-            init() {
-                $$('a[href^="#"]').forEach(anchor => {
-                    anchor.addEventListener('click', (e) => {
-                        e.preventDefault();
-                        const target = $(anchor.getAttribute('href'));
-                        if (target) {
-                            const offsetTop = target.offsetTop - 80;
-                            window.scrollTo({
-                                top: offsetTop,
-                                behavior: 'smooth'
-                            });
-                        }
-                    });
-                });
-            }
-        }
-
-        // Tab System
-        class TabSystem {
-            constructor() {
-                this.tabButtons = $$('.tab-button');
-                this.tabPanels = $$('.tab-panel');
-                this.init();
-            }
-
-            init() {
-                this.tabButtons.forEach(button => {
-                    button.addEventListener('click', (e) => this.switchTab(e));
-                    button.addEventListener('keydown', (e) => this.handleKeydown(e));
-                });
-            }
-
-            switchTab(e) {
-                const targetTab = e.target.dataset.tab;
-                
-                // Update buttons
-                this.tabButtons.forEach(btn => {
-                    btn.classList.remove('active');
-                    btn.setAttribute('aria-selected', 'false');
-                });
-                e.target.classList.add('active');
-                e.target.setAttribute('aria-selected', 'true');
-
-                // Update panels
-                this.tabPanels.forEach(panel => {
-                    panel.classList.remove('active');
-                });
-                $(`#${targetTab}`).classList.add('active');
-            }
-
-            handleKeydown(e) {
-                const currentIndex = Array.from(this.tabButtons).indexOf(e.target);
-                let newIndex;
-
-                switch (e.key) {
-                    case 'ArrowLeft':
-                        newIndex = currentIndex > 0 ? currentIndex - 1 : this.tabButtons.length - 1;
-                        break;
-                    case 'ArrowRight':
-                        newIndex = currentIndex < this.tabButtons.length - 1 ? currentIndex + 1 : 0;
-                        break;
-                    case 'Home':
-                        newIndex = 0;
-                        break;
-                    case 'End':
-                        newIndex = this.tabButtons.length - 1;
-                        break;
-                    default:
-                        return;
-                }
-
-                e.preventDefault();
-                this.tabButtons[newIndex].focus();
-                this.tabButtons[newIndex].click();
-            }
-        }
-
-        // Scroll Animations
-        class ScrollAnimations {
-            constructor() {
-                this.elements = $$('.fade-in, .slide-in-left, .slide-in-right');
-                this.init();
-            }
-
-            init() {
-                const observerOptions = {
-                    threshold: 0.1,
-                    rootMargin: '0px 0px -50px 0px'
-                };
-
-                this.observer = new IntersectionObserver((entries) => {
-                    entries.forEach(entry => {
-                        if (entry.isIntersecting) {
-                            entry.target.classList.add('visible');
-                            this.observer.unobserve(entry.target);
-                        }
-                    });
-                }, observerOptions);
-
-                this.elements.forEach(el => this.observer.observe(el));
-            }
-        }
-
-        // Contact Form
-        class ContactForm {
-            constructor() {
-                this.form = $('#contact-form');
-                this.submitBtn = this.form.querySelector('button[type="submit"]');
-                this.originalBtnText = this.submitBtn.innerHTML;
-                this.init();
-            }
-
-            init() {
-                this.form.addEventListener('submit', (e) => this.handleSubmit(e));
-                
-                // Real-time validation
-                const inputs = this.form.querySelectorAll('input, textarea');
-                inputs.forEach(input => {
-                    input.addEventListener('blur', () => this.validateField(input));
-                    input.addEventListener('input', () => this.clearError(input));
-                });
-            }
-
-            validateField(field) {
-                const value = field.value.trim();
-                const errorElement = $(`#${field.name}-error`);
-                let isValid = true;
-                let errorMessage = '';
-
-                // Clear previous error
-                this.clearError(field);
-
-                // Validation rules
-                if (field.hasAttribute('required') && !value) {
-                    errorMessage = `${field.labels[0].textContent.replace(' *', '')} is required`;
-                    isValid = false;
-                } else if (field.type === 'email' && value && !this.isValidEmail(value)) {
-                    errorMessage = 'Please enter a valid email address';
-                    isValid = false;
-                }
-
-                if (!isValid) {
-                    field.classList.add('error');
-                    if (errorElement) {
-                        errorElement.textContent = errorMessage;
-                        errorElement.style.display = 'block';
-                    }
-                }
-
-                return isValid;
-            }
-
-            clearError(field) {
-                field.classList.remove('error');
-                const errorElement = $(`#${field.name}-error`);
-                if (errorElement) {
-                    errorElement.textContent = '';
-                    errorElement.style.display = 'none';
-                }
-            }
-
-            isValidEmail(email) {
-                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-                return emailRegex.test(email);
-            }
-
-            async handleSubmit(e) {
-                e.preventDefault();
-                
-                // Validate all fields
-                const inputs = this.form.querySelectorAll('input, textarea');
-                let isFormValid = true;
-                
-                inputs.forEach(input => {
-                    if (!this.validateField(input)) {
-                        isFormValid = false;
-                    }
-                });
-
-                if (!isFormValid) {
-                    // Focus on first error field
-                    const firstError = this.form.querySelector('.error');
-                    if (firstError) firstError.focus();
-                    return;
-                }
-
-                // Show loading state
-                this.submitBtn.innerHTML = '<span class="loading"></span> Sending...';
-                this.submitBtn.disabled = true;
-
-                try {
-                    // Simulate form submission (replace with actual API call)
-                    await new Promise(resolve => setTimeout(resolve, 2000));
-                    
-                    // Success
-                    this.showNotification('Thank you for your message! I\'ll get back to you soon.', 'success');
-                    this.form.reset();
-                } catch (error) {
-                    // Error
-                    this.showNotification('Sorry, there was an error sending your message. Please try again.', 'error');
-                } finally {
-                    // Reset button
-                    this.submitBtn.innerHTML = this.originalBtnText;
-                    this.submitBtn.disabled = false;
-                }
-            }
-
-            showNotification(message, type) {
-                // Create notification element
-                const notification = document.createElement('div');
-                notification.className = `notification notification-${type}`;
-                notification.textContent = message;
-                notification.style.cssText = `
-                    position: fixed;
-                    top: 20px;
-                    right: 20px;
-                    padding: 1rem 2rem;
-                    background: ${type === 'success' ? 'var(--primary-500)' : '#ef4444'};
-                    color: white;
-                    border-radius: var(--radius-lg);
-                    box-shadow: var(--shadow-lg);
-                    z-index: var(--z-tooltip);
-                    transform: translateX(100%);
-                    transition: transform var(--transition-normal);
-                `;
-
-                document.body.appendChild(notification);
-
-                // Animate in
-                setTimeout(() => {
-                    notification.style.transform = 'translateX(0)';
-                }, 100);
-
-                // Remove after 5 seconds
-                setTimeout(() => {
-                    notification.style.transform = 'translateX(100%)';
-                    setTimeout(() => {
-                        document.body.removeChild(notification);
-                    }, 300);
-                }, 5000);
-            }
-        }
-
-        // Performance Monitoring
-        class PerformanceMonitor {
-            constructor() {
-                this.init();
-            }
-
-            init() {
-                // Monitor page load performance
-                window.addEventListener('load', () => {
-                    if ('performance' in window) {
-                        const perfData = performance.getEntriesByType('navigation')[0];
-                        console.log(`Page loaded in ${perfData.loadEventEnd - perfData.fetchStart}ms`);
-                    }
-                });
-
-                // Monitor scroll performance
-                let scrolling = false;
-                window.addEventListener('scroll', () => {
-                    if (!scrolling) {
-                        requestAnimationFrame(() => {
-                            scrolling = false;
-                        });
-                        scrolling = true;
-                    }
-                });
-            }
-        }
-
-        // Initialize all components when DOM is loaded
-        document.addEventListener('DOMContentLoaded', () => {
-            new MobileNav();
-            new NavbarScroll();
-            new SmoothScroll();
-            new TabSystem();
-            new ScrollAnimations();
-            new ContactForm();
-            new PerformanceMonitor();
-
-            // Add loading complete class
-            document.body.classList.add('loaded');
-        });
-
-        // Handle page visibility changes
-        document.addEventListener('visibilitychange', () => {
-            if (document.hidden) {
-                // Page is hidden, pause animations
-                document.body.classList.add('paused');
-            } else {
-                // Page is visible, resume animations
-                document.body.classList.remove('paused');
-            }
-        });
-
-        // Service Worker Registration (for PWA capabilities)
-        if ('serviceWorker' in navigator) {
-            window.addEventListener('load', () => {
-                navigator.serviceWorker.register('/sw.js')
-                    .then(registration => {
-                        console.log('SW registered: ', registration);
-                    })
-                    .catch(registrationError => {
-                        console.log('SW registration failed: ', registrationError);
-                    });
-            });
-        }
-    </script>
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
