@@ -3,43 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Yubraj Panthi - Student, Leader, and Web Designer from Nepal">
-    <meta name="keywords" content="Yubraj Panthi, Portfolio, Web Designer, Student, Nepal">
-    <title>Yubraj Panthi - Portfolio</title>
+    <meta name="description" content="Yubraj Panthi - Student, Leader, and Web Designer from Nepal. Passionate about technology, community service, and making a positive impact.">
+    <meta name="keywords" content="Yubraj Panthi, Portfolio, Web Designer, Student Leader, Nepal, Technology, Community Service">
+    <meta name="author" content="Yubraj Panthi">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Yubraj Panthi - Portfolio">
+    <meta property="og:description" content="Student, Leader, and Web Designer from Nepal">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yubrajpanthi.com.np">
+    <meta property="og:image" content="images/user.png">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Yubraj Panthi - Portfolio">
+    <meta name="twitter:description" content="Student, Leader, and Web Designer from Nepal">
+    <meta name="twitter:image" content="images/user.png">
+    
+    <title>Yubraj Panthi - Portfolio | Student Leader & Web Designer</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Preconnect for Performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#0ea5e9">
 </head>
 <body>
     <!-- Navigation -->
-    <nav id="navbar">
+    <nav class="navbar" id="navbar">
         <div class="container">
-            <div class="logo">Yubraj Panthi</div>
-            <ul>
-                <li><a href="#header">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#awards">Awards</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+            <div class="nav-container">
+                <a href="#hero" class="logo">Yubraj Panthi</a>
+                
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="#hero" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#awards" class="nav-link">Awards</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                
+                <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
         </div>
     </nav>
 
-    <!-- Header Section -->
-    <section id="header">
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
         <div class="container">
-            <div class="header-text fade-in">
-                <p>Hello, I'm</p>
-                <h1>Yubraj <span>Panthi</span></h1>
-                <p class="header-subtitle">A passionate student, leader, and web designer from Nepal, dedicated to making a positive impact through technology and community service.</p>
-                <div class="cta-buttons">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span>Available for opportunities</span>
+                </div>
+                
+                <h1 class="hero-title">
+                    Hello, I'm <span class="text-gradient">Yubraj Panthi</span>
+                </h1>
+                
+                <p class="hero-subtitle">
+                    A passionate student, leader, and web designer from Nepal, dedicated to making a positive impact through technology and community service. Currently studying at NHI Institute and leading various organizations.
+                </p>
+                
+                <div class="hero-actions">
                     <a href="#about" class="btn btn-primary">
                         <i class="fas fa-user"></i>
-                        Learn More
+                        Discover My Story
                     </a>
                     <a href="#contact" class="btn btn-secondary">
                         <i class="fas fa-envelope"></i>
-                        Get In Touch
+                        Let's Connect
                     </a>
                 </div>
             </div>
@@ -47,88 +91,237 @@
     </section>
 
     <!-- About Section -->
-    <section id="about">
+    <section class="about section" id="about">
         <div class="container">
-            <h2 class="section-title fade-in">About Me</h2>
+            <div class="section-header fade-in">
+                <span class="section-badge">Get to know me</span>
+                <h2 class="section-title">About Me</h2>
+                <p class="section-description">
+                    Discover my journey, skills, and the experiences that have shaped me into who I am today.
+                </p>
+            </div>
+            
             <div class="about-content">
-                <div class="about-image fade-in">
-                    <img src="images/user.png" alt="Yubraj Panthi">
+                <div class="about-image slide-in-left">
+                    <div class="about-image-wrapper">
+                        <img src="images/user.png" alt="Yubraj Panthi - Student Leader and Web Designer">
+                    </div>
+                    <div class="about-decorations"></div>
                 </div>
-                <div class="about-text fade-in">
+                
+                <div class="about-text slide-in-right">
                     <p>
                         Hello Everyone! I'm Yubraj Panthi, currently studying in grade 12 at NHI Institute. 
                         I'm passionate about leadership, web design, and making a positive impact in my community. 
                         My hobbies include reading books, participating in quizzes, and creating beautiful web experiences.
                     </p>
+                    
                     <p>
                         I believe that deep inside us, we all strive to move forward and up, to scale new heights. 
                         Through my various roles in different organizations, I've learned the importance of teamwork, 
-                        dedication, and continuous learning.
+                        dedication, and continuous learning. Every challenge is an opportunity to grow and contribute meaningfully to society.
                     </p>
 
-                    <div class="tab-navigation">
-                        <button class="tab-link active" onclick="openTab(event, 'skills')">Skills</button>
-                        <button class="tab-link" onclick="openTab(event, 'experience')">Experience</button>
-                        <button class="tab-link" onclick="openTab(event, 'education')">Education</button>
-                    </div>
+                    <div class="tabs">
+                        <div class="tab-list" role="tablist">
+                            <button class="tab-button active" role="tab" data-tab="skills" aria-selected="true">
+                                <i class="fas fa-code"></i> Skills
+                            </button>
+                            <button class="tab-button" role="tab" data-tab="experience" aria-selected="false">
+                                <i class="fas fa-briefcase"></i> Experience
+                            </button>
+                            <button class="tab-button" role="tab" data-tab="education" aria-selected="false">
+                                <i class="fas fa-graduation-cap"></i> Education
+                            </button>
+                        </div>
 
-                    <div id="skills" class="tab-content active">
-                        <ul>
-                            <li>
-                                <span>Leadership</span>
-                                <p>Strong leadership skills developed through various organizational roles</p>
-                            </li>
-                            <li>
-                                <span>Web Design</span>
-                                <p>Creating beautiful and functional web experiences</p>
-                            </li>
-                            <li>
-                                <span>Teamwork & Flexibility</span>
-                                <p>Excellent collaboration and adaptability skills</p>
-                            </li>
-                            <li>
-                                <span>Research</span>
-                                <p>Strong analytical and research capabilities</p>
-                            </li>
-                        </ul>
-                    </div>
+                        <div class="tab-panel active" id="skills" role="tabpanel">
+                            <div class="tab-content">
+                                <div class="tab-item">
+                                    <div class="tab-item-header">
+                                        <div class="tab-item-icon">
+                                            <i class="fas fa-users"></i>
+                                        </div>
+                                        <div>
+                                            <div class="tab-item-title">Leadership</div>
+                                            <div class="tab-item-subtitle">Team Management</div>
+                                        </div>
+                                    </div>
+                                    <p class="tab-item-description">
+                                        Strong leadership skills developed through various organizational roles, 
+                                        including team management, strategic planning, and community engagement.
+                                    </p>
+                                </div>
+                                
+                                <div class="tab-item">
+                                    <div class="tab-item-header">
+                                        <div class="tab-item-icon">
+                                            <i class="fas fa-palette"></i>
+                                        </div>
+                                        <div>
+                                            <div class="tab-item-title">Web Design</div>
+                                            <div class="tab-item-subtitle">UI/UX Design</div>
+                                        </div>
+                                    </div>
+                                    <p class="tab-item-description">
+                                        Creating beautiful and functional web experiences with modern design principles, 
+                                        responsive layouts, and user-centered approach.
+                                    </p>
+                                </div>
+                                
+                                <div class="tab-item">
+                                    <div class="tab-item-header">
+                                        <div class="tab-item-icon">
+                                            <i class="fas fa-handshake"></i>
+                                        </div>
+                                        <div>
+                                            <div class="tab-item-title">Teamwork & Flexibility</div>
+                                            <div class="tab-item-subtitle">Collaboration</div>
+                                        </div>
+                                    </div>
+                                    <p class="tab-item-description">
+                                        Excellent collaboration and adaptability skills, with experience working 
+                                        in diverse teams and adapting to changing environments.
+                                    </p>
+                                </div>
+                                
+                                <div class="tab-item">
+                                    <div class="tab-item-header">
+                                        <div class="tab-item-icon">
+                                            <i class="fas fa-search"></i>
+                                        </div>
+                                        <div>
+                                            <div class="tab-item-title">Research</div>
+                                            <div class="tab-item-subtitle">Analysis & Innovation</div>
+                                        </div>
+                                    </div>
+                                    <p class="tab-item-description">
+                                        Strong analytical and research capabilities, with a passion for 
+                                        discovering new solutions and innovative approaches to problems.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
 
-                    <div id="experience" class="tab-content">
-                        <ul>
-                            <li>
-                                <span>2022 - Current</span>
-                                <p>President at Interact Club of Central Butwal</p>
-                            </li>
-                            <li>
-                                <span>2019 - 2020</span>
-                                <p>Managing Director at NHISQC</p>
-                            </li>
-                            <li>
-                                <span>2021 - Current</span>
-                                <p>Vice President at NHI STEM</p>
-                            </li>
-                            <li>
-                                <span>2021 - 2022</span>
-                                <p>Member at LOFA Butwal</p>
-                            </li>
-                        </ul>
-                    </div>
+                        <div class="tab-panel" id="experience" role="tabpanel">
+                            <div class="tab-content">
+                                <div class="tab-item">
+                                    <div class="tab-item-header">
+                                        <div class="tab-item-icon">
+                                            <i class="fas fa-crown"></i>
+                                        </div>
+                                        <div>
+                                            <div class="tab-item-title">President</div>
+                                            <div class="tab-item-subtitle">2022 - Current</div>
+                                        </div>
+                                    </div>
+                                    <p class="tab-item-description">
+                                        Leading the Interact Club of Central Butwal, organizing community service 
+                                        projects and youth development programs.
+                                    </p>
+                                </div>
+                                
+                                <div class="tab-item">
+                                    <div class="tab-item-header">
+                                        <div class="tab-item-icon">
+                                            <i class="fas fa-user-tie"></i>
+                                        </div>
+                                        <div>
+                                            <div class="tab-item-title">Managing Director</div>
+                                            <div class="tab-item-subtitle">2019 - 2020</div>
+                                        </div>
+                                    </div>
+                                    <p class="tab-item-description">
+                                        Managed operations and strategic initiatives at NHISQC, 
+                                        focusing on quality improvement and organizational development.
+                                    </p>
+                                </div>
+                                
+                                <div class="tab-item">
+                                    <div class="tab-item-header">
+                                        <div class="tab-item-icon">
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <div>
+                                            <div class="tab-item-title">Vice President</div>
+                                            <div class="tab-item-subtitle">2021 - Current</div>
+                                        </div>
+                                    </div>
+                                    <p class="tab-item-description">
+                                        Supporting STEM education initiatives at NHI STEM, promoting 
+                                        science and technology among students.
+                                    </p>
+                                </div>
+                                
+                                <div class="tab-item">
+                                    <div class="tab-item-header">
+                                        <div class="tab-item-icon">
+                                            <i class="fas fa-users"></i>
+                                        </div>
+                                        <div>
+                                            <div class="tab-item-title">Member</div>
+                                            <div class="tab-item-subtitle">2021 - 2022</div>
+                                        </div>
+                                    </div>
+                                    <p class="tab-item-description">
+                                        Active member of LOFA Butwal, contributing to local community 
+                                        development and social welfare initiatives.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
 
-                    <div id="education" class="tab-content">
-                        <ul>
-                            <li>
-                                <span>2017 - Current</span>
-                                <p>Grade 7 - Current at NHI Institute</p>
-                            </li>
-                            <li>
-                                <span>2012 - 2017</span>
-                                <p>Grade 2 - Grade 6 at Malika English Boarding School</p>
-                            </li>
-                            <li>
-                                <span>2010 - 2012</span>
-                                <p>Kalika English Boarding School</p>
-                            </li>
-                        </ul>
+                        <div class="tab-panel" id="education" role="tabpanel">
+                            <div class="tab-content">
+                                <div class="tab-item">
+                                    <div class="tab-item-header">
+                                        <div class="tab-item-icon">
+                                            <i class="fas fa-school"></i>
+                                        </div>
+                                        <div>
+                                            <div class="tab-item-title">NHI Institute</div>
+                                            <div class="tab-item-subtitle">2017 - Current</div>
+                                        </div>
+                                    </div>
+                                    <p class="tab-item-description">
+                                        Currently pursuing higher secondary education (Grade 7 - Current), 
+                                        actively participating in various academic and extracurricular activities.
+                                    </p>
+                                </div>
+                                
+                                <div class="tab-item">
+                                    <div class="tab-item-header">
+                                        <div class="tab-item-icon">
+                                            <i class="fas fa-book"></i>
+                                        </div>
+                                        <div>
+                                            <div class="tab-item-title">Malika English Boarding School</div>
+                                            <div class="tab-item-subtitle">2012 - 2017</div>
+                                        </div>
+                                    </div>
+                                    <p class="tab-item-description">
+                                        Completed primary education (Grade 2 - Grade 6), building strong 
+                                        foundational skills in academics and personal development.
+                                    </p>
+                                </div>
+                                
+                                <div class="tab-item">
+                                    <div class="tab-item-header">
+                                        <div class="tab-item-icon">
+                                            <i class="fas fa-seedling"></i>
+                                        </div>
+                                        <div>
+                                            <div class="tab-item-title">Kalika English Boarding School</div>
+                                            <div class="tab-item-subtitle">2010 - 2012</div>
+                                        </div>
+                                    </div>
+                                    <p class="tab-item-description">
+                                        Started my educational journey, developing early learning skills 
+                                        and discovering my passion for knowledge and growth.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -136,212 +329,552 @@
     </section>
 
     <!-- Awards Section -->
-    <section id="awards">
+    <section class="awards section" id="awards">
         <div class="container">
-            <h2 class="section-title fade-in">Awards & Achievements</h2>
+            <div class="section-header fade-in">
+                <span class="section-badge">Recognition</span>
+                <h2 class="section-title">Awards & Achievements</h2>
+                <p class="section-description">
+                    A showcase of the recognition and achievements I've earned through dedication and hard work.
+                </p>
+            </div>
+            
             <div class="awards-grid">
-                <div class="award-card fade-in">
-                    <img src="images/work-1.jpg" alt="Award 1">
-                    <div class="award-card-content">
-                        <h3>Leadership Excellence</h3>
-                        <p>Recognition for outstanding leadership in community service and student organizations.</p>
+                <article class="award-card fade-in">
+                    <div class="award-image">
+                        <img src="images/work-1.jpg" alt="Leadership Excellence Award" loading="lazy">
                     </div>
-                </div>
-                <div class="award-card fade-in">
-                    <img src="images/work-2.jpg" alt="Award 2">
-                    <div class="award-card-content">
-                        <h3>Academic Achievement</h3>
-                        <p>Excellence in academic performance and contribution to educational initiatives.</p>
+                    <div class="award-content">
+                        <h3 class="award-title">Leadership Excellence</h3>
+                        <p class="award-description">
+                            Recognition for outstanding leadership in community service and student organizations. 
+                            This award acknowledges my commitment to inspiring others and driving positive change.
+                        </p>
                     </div>
-                </div>
-                <div class="award-card fade-in">
-                    <img src="images/work-3.jpg" alt="Award 3">
-                    <div class="award-card-content">
-                        <h3>Community Service</h3>
-                        <p>Outstanding contribution to community development and social service projects.</p>
+                </article>
+                
+                <article class="award-card fade-in">
+                    <div class="award-image">
+                        <img src="images/work-2.jpg" alt="Academic Achievement Award" loading="lazy">
                     </div>
-                </div>
+                    <div class="award-content">
+                        <h3 class="award-title">Academic Achievement</h3>
+                        <p class="award-description">
+                            Excellence in academic performance and contribution to educational initiatives. 
+                            This recognition reflects my dedication to learning and academic excellence.
+                        </p>
+                    </div>
+                </article>
+                
+                <article class="award-card fade-in">
+                    <div class="award-image">
+                        <img src="images/work-3.jpg" alt="Community Service Award" loading="lazy">
+                    </div>
+                    <div class="award-content">
+                        <h3 class="award-title">Community Service</h3>
+                        <p class="award-description">
+                            Outstanding contribution to community development and social service projects. 
+                            This award celebrates my commitment to making a positive impact in society.
+                        </p>
+                    </div>
+                </article>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact">
+    <section class="contact section" id="contact">
         <div class="container">
-            <h2 class="section-title fade-in">Get In Touch</h2>
+            <div class="section-header fade-in">
+                <span class="section-badge">Let's connect</span>
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-description">
+                    Ready to collaborate or just want to say hello? I'd love to hear from you and discuss new opportunities.
+                </p>
+            </div>
+            
             <div class="contact-content">
-                <div class="contact-info fade-in">
-                    <h3>Let's Connect</h3>
+                <div class="contact-info slide-in-left">
+                    <h3>Let's Start a Conversation</h3>
+                    
                     <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <h4>Email</h4>
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email Address</h4>
                             <p>yubrajsharma143@gmail.com</p>
                         </div>
                     </div>
+                    
                     <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <div>
-                            <h4>Phone</h4>
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone Number</h4>
                             <p>+977 9866413389</p>
                         </div>
                     </div>
+                    
                     <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div>
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
                             <h4>Location</h4>
                             <p>Butwal, Nepal</p>
                         </div>
                     </div>
 
                     <div class="social-links">
-                        <a href="https://www.facebook.com/yubraj.panthi.31/" target="_blank" rel="noopener">
+                        <a href="https://www.facebook.com/yubraj.panthi.31/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Facebook">
                             <i class="fab fa-facebook-f"></i>
                         </a>
-                        <a href="https://www.instagram.com/yubraj.panthi/" target="_blank" rel="noopener">
+                        <a href="https://www.instagram.com/yubraj.panthi/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">
                             <i class="fab fa-instagram"></i>
                         </a>
-                        <a href="https://twitter.com/Yubrajpanthi5" target="_blank" rel="noopener">
+                        <a href="https://twitter.com/Yubrajpanthi5" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Twitter">
                             <i class="fab fa-twitter"></i>
                         </a>
-                        <a href="mailto:yubrajsharma143@gmail.com">
+                        <a href="mailto:yubrajsharma143@gmail.com" class="social-link" aria-label="Email">
                             <i class="fas fa-envelope"></i>
                         </a>
                     </div>
                 </div>
 
-                <div class="contact-form fade-in">
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <label for="name">Your Name</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Your Email</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="subject">Subject</label>
-                            <input type="text" id="subject" name="subject" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Your Message</label>
-                            <textarea id="message" name="message" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">
-                            <i class="fas fa-paper-plane"></i>
-                            Send Message
-                        </button>
-                    </form>
-                </div>
+                <form class="contact-form slide-in-right" id="contact-form" novalidate>
+                    <div class="form-group">
+                        <label for="name" class="form-label">Your Name *</label>
+                        <input type="text" id="name" name="name" class="form-input" required aria-describedby="name-error">
+                        <div id="name-error" class="error-message" role="alert"></div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email" class="form-label">Your Email *</label>
+                        <input type="email" id="email" name="email" class="form-input" required aria-describedby="email-error">
+                        <div id="email-error" class="error-message" role="alert"></div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject" class="form-label">Subject *</label>
+                        <input type="text" id="subject" name="subject" class="form-input" required aria-describedby="subject-error">
+                        <div id="subject-error" class="error-message" role="alert"></div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message" class="form-label">Your Message *</label>
+                        <textarea id="message" name="message" class="form-textarea" required aria-describedby="message-error"></textarea>
+                        <div id="message-error" class="error-message" role="alert"></div>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary form-submit">
+                        <i class="fas fa-paper-plane"></i>
+                        Send Message
+                    </button>
+                </form>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer style="background: var(--bg-primary); padding: 2rem 0; text-align: center; border-top: 1px solid var(--border-color);">
+    <footer class="footer">
         <div class="container">
-            <p style="color: var(--text-muted); font-size: 0.9rem;">
-                © 2024 Yubraj Panthi. All rights reserved. | Made with ❤️ in Nepal
-            </p>
+            <p>© 2024 Yubraj Panthi. All rights reserved. | Made with ❤️ in Nepal</p>
         </div>
     </footer>
 
+    <!-- JavaScript -->
     <script>
-        // Tab functionality
-        function openTab(evt, tabName) {
-            var i, tabcontent, tablinks;
-            
-            // Hide all tab content
-            tabcontent = document.getElementsByClassName("tab-content");
-            for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].classList.remove("active");
-            }
-            
-            // Remove active class from all tab links
-            tablinks = document.getElementsByClassName("tab-link");
-            for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].classList.remove("active");
-            }
-            
-            // Show the selected tab content and mark the button as active
-            document.getElementById(tabName).classList.add("active");
-            evt.currentTarget.classList.add("active");
-        }
-
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
-
-        // Navbar background on scroll
-        window.addEventListener('scroll', function() {
-            const navbar = document.getElementById('navbar');
-            if (window.scrollY > 100) {
-                navbar.style.background = 'rgba(15, 23, 42, 0.98)';
-            } else {
-                navbar.style.background = 'rgba(15, 23, 42, 0.95)';
-            }
-        });
-
-        // Fade in animation on scroll
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
+        // Enhanced JavaScript with better performance and accessibility
+        
+        // Utility Functions
+        const $ = (selector) => document.querySelector(selector);
+        const $$ = (selector) => document.querySelectorAll(selector);
+        
+        // Debounce function for performance
+        const debounce = (func, wait) => {
+            let timeout;
+            return function executedFunction(...args) {
+                const later = () => {
+                    clearTimeout(timeout);
+                    func(...args);
+                };
+                clearTimeout(timeout);
+                timeout = setTimeout(later, wait);
+            };
         };
 
-        const observer = new IntersectionObserver(function(entries) {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
+        // Mobile Navigation
+        class MobileNav {
+            constructor() {
+                this.navToggle = $('#nav-toggle');
+                this.navMenu = $('#nav-menu');
+                this.navLinks = $$('.nav-link');
+                this.init();
+            }
+
+            init() {
+                this.navToggle.addEventListener('click', () => this.toggleMenu());
+                this.navLinks.forEach(link => {
+                    link.addEventListener('click', () => this.closeMenu());
+                });
+                
+                // Close menu on escape key
+                document.addEventListener('keydown', (e) => {
+                    if (e.key === 'Escape' && this.navMenu.classList.contains('active')) {
+                        this.closeMenu();
+                    }
+                });
+            }
+
+            toggleMenu() {
+                this.navToggle.classList.toggle('active');
+                this.navMenu.classList.toggle('active');
+                document.body.style.overflow = this.navMenu.classList.contains('active') ? 'hidden' : '';
+            }
+
+            closeMenu() {
+                this.navToggle.classList.remove('active');
+                this.navMenu.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        }
+
+        // Navbar Scroll Effect
+        class NavbarScroll {
+            constructor() {
+                this.navbar = $('#navbar');
+                this.init();
+            }
+
+            init() {
+                const handleScroll = debounce(() => {
+                    if (window.scrollY > 100) {
+                        this.navbar.classList.add('scrolled');
+                    } else {
+                        this.navbar.classList.remove('scrolled');
+                    }
+                }, 10);
+
+                window.addEventListener('scroll', handleScroll);
+            }
+        }
+
+        // Smooth Scrolling
+        class SmoothScroll {
+            constructor() {
+                this.init();
+            }
+
+            init() {
+                $$('a[href^="#"]').forEach(anchor => {
+                    anchor.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        const target = $(anchor.getAttribute('href'));
+                        if (target) {
+                            const offsetTop = target.offsetTop - 80;
+                            window.scrollTo({
+                                top: offsetTop,
+                                behavior: 'smooth'
+                            });
+                        }
+                    });
+                });
+            }
+        }
+
+        // Tab System
+        class TabSystem {
+            constructor() {
+                this.tabButtons = $$('.tab-button');
+                this.tabPanels = $$('.tab-panel');
+                this.init();
+            }
+
+            init() {
+                this.tabButtons.forEach(button => {
+                    button.addEventListener('click', (e) => this.switchTab(e));
+                    button.addEventListener('keydown', (e) => this.handleKeydown(e));
+                });
+            }
+
+            switchTab(e) {
+                const targetTab = e.target.dataset.tab;
+                
+                // Update buttons
+                this.tabButtons.forEach(btn => {
+                    btn.classList.remove('active');
+                    btn.setAttribute('aria-selected', 'false');
+                });
+                e.target.classList.add('active');
+                e.target.setAttribute('aria-selected', 'true');
+
+                // Update panels
+                this.tabPanels.forEach(panel => {
+                    panel.classList.remove('active');
+                });
+                $(`#${targetTab}`).classList.add('active');
+            }
+
+            handleKeydown(e) {
+                const currentIndex = Array.from(this.tabButtons).indexOf(e.target);
+                let newIndex;
+
+                switch (e.key) {
+                    case 'ArrowLeft':
+                        newIndex = currentIndex > 0 ? currentIndex - 1 : this.tabButtons.length - 1;
+                        break;
+                    case 'ArrowRight':
+                        newIndex = currentIndex < this.tabButtons.length - 1 ? currentIndex + 1 : 0;
+                        break;
+                    case 'Home':
+                        newIndex = 0;
+                        break;
+                    case 'End':
+                        newIndex = this.tabButtons.length - 1;
+                        break;
+                    default:
+                        return;
                 }
-            });
-        }, observerOptions);
 
-        // Observe all fade-in elements
-        document.querySelectorAll('.fade-in').forEach(el => {
-            observer.observe(el);
+                e.preventDefault();
+                this.tabButtons[newIndex].focus();
+                this.tabButtons[newIndex].click();
+            }
+        }
+
+        // Scroll Animations
+        class ScrollAnimations {
+            constructor() {
+                this.elements = $$('.fade-in, .slide-in-left, .slide-in-right');
+                this.init();
+            }
+
+            init() {
+                const observerOptions = {
+                    threshold: 0.1,
+                    rootMargin: '0px 0px -50px 0px'
+                };
+
+                this.observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('visible');
+                            this.observer.unobserve(entry.target);
+                        }
+                    });
+                }, observerOptions);
+
+                this.elements.forEach(el => this.observer.observe(el));
+            }
+        }
+
+        // Contact Form
+        class ContactForm {
+            constructor() {
+                this.form = $('#contact-form');
+                this.submitBtn = this.form.querySelector('button[type="submit"]');
+                this.originalBtnText = this.submitBtn.innerHTML;
+                this.init();
+            }
+
+            init() {
+                this.form.addEventListener('submit', (e) => this.handleSubmit(e));
+                
+                // Real-time validation
+                const inputs = this.form.querySelectorAll('input, textarea');
+                inputs.forEach(input => {
+                    input.addEventListener('blur', () => this.validateField(input));
+                    input.addEventListener('input', () => this.clearError(input));
+                });
+            }
+
+            validateField(field) {
+                const value = field.value.trim();
+                const errorElement = $(`#${field.name}-error`);
+                let isValid = true;
+                let errorMessage = '';
+
+                // Clear previous error
+                this.clearError(field);
+
+                // Validation rules
+                if (field.hasAttribute('required') && !value) {
+                    errorMessage = `${field.labels[0].textContent.replace(' *', '')} is required`;
+                    isValid = false;
+                } else if (field.type === 'email' && value && !this.isValidEmail(value)) {
+                    errorMessage = 'Please enter a valid email address';
+                    isValid = false;
+                }
+
+                if (!isValid) {
+                    field.classList.add('error');
+                    if (errorElement) {
+                        errorElement.textContent = errorMessage;
+                        errorElement.style.display = 'block';
+                    }
+                }
+
+                return isValid;
+            }
+
+            clearError(field) {
+                field.classList.remove('error');
+                const errorElement = $(`#${field.name}-error`);
+                if (errorElement) {
+                    errorElement.textContent = '';
+                    errorElement.style.display = 'none';
+                }
+            }
+
+            isValidEmail(email) {
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                return emailRegex.test(email);
+            }
+
+            async handleSubmit(e) {
+                e.preventDefault();
+                
+                // Validate all fields
+                const inputs = this.form.querySelectorAll('input, textarea');
+                let isFormValid = true;
+                
+                inputs.forEach(input => {
+                    if (!this.validateField(input)) {
+                        isFormValid = false;
+                    }
+                });
+
+                if (!isFormValid) {
+                    // Focus on first error field
+                    const firstError = this.form.querySelector('.error');
+                    if (firstError) firstError.focus();
+                    return;
+                }
+
+                // Show loading state
+                this.submitBtn.innerHTML = '<span class="loading"></span> Sending...';
+                this.submitBtn.disabled = true;
+
+                try {
+                    // Simulate form submission (replace with actual API call)
+                    await new Promise(resolve => setTimeout(resolve, 2000));
+                    
+                    // Success
+                    this.showNotification('Thank you for your message! I\'ll get back to you soon.', 'success');
+                    this.form.reset();
+                } catch (error) {
+                    // Error
+                    this.showNotification('Sorry, there was an error sending your message. Please try again.', 'error');
+                } finally {
+                    // Reset button
+                    this.submitBtn.innerHTML = this.originalBtnText;
+                    this.submitBtn.disabled = false;
+                }
+            }
+
+            showNotification(message, type) {
+                // Create notification element
+                const notification = document.createElement('div');
+                notification.className = `notification notification-${type}`;
+                notification.textContent = message;
+                notification.style.cssText = `
+                    position: fixed;
+                    top: 20px;
+                    right: 20px;
+                    padding: 1rem 2rem;
+                    background: ${type === 'success' ? 'var(--primary-500)' : '#ef4444'};
+                    color: white;
+                    border-radius: var(--radius-lg);
+                    box-shadow: var(--shadow-lg);
+                    z-index: var(--z-tooltip);
+                    transform: translateX(100%);
+                    transition: transform var(--transition-normal);
+                `;
+
+                document.body.appendChild(notification);
+
+                // Animate in
+                setTimeout(() => {
+                    notification.style.transform = 'translateX(0)';
+                }, 100);
+
+                // Remove after 5 seconds
+                setTimeout(() => {
+                    notification.style.transform = 'translateX(100%)';
+                    setTimeout(() => {
+                        document.body.removeChild(notification);
+                    }, 300);
+                }, 5000);
+            }
+        }
+
+        // Performance Monitoring
+        class PerformanceMonitor {
+            constructor() {
+                this.init();
+            }
+
+            init() {
+                // Monitor page load performance
+                window.addEventListener('load', () => {
+                    if ('performance' in window) {
+                        const perfData = performance.getEntriesByType('navigation')[0];
+                        console.log(`Page loaded in ${perfData.loadEventEnd - perfData.fetchStart}ms`);
+                    }
+                });
+
+                // Monitor scroll performance
+                let scrolling = false;
+                window.addEventListener('scroll', () => {
+                    if (!scrolling) {
+                        requestAnimationFrame(() => {
+                            scrolling = false;
+                        });
+                        scrolling = true;
+                    }
+                });
+            }
+        }
+
+        // Initialize all components when DOM is loaded
+        document.addEventListener('DOMContentLoaded', () => {
+            new MobileNav();
+            new NavbarScroll();
+            new SmoothScroll();
+            new TabSystem();
+            new ScrollAnimations();
+            new ContactForm();
+            new PerformanceMonitor();
+
+            // Add loading complete class
+            document.body.classList.add('loaded');
         });
 
-        // Form submission
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            const submitBtn = this.querySelector('button[type="submit"]');
-            const originalText = submitBtn.innerHTML;
-            
-            // Show loading state
-            submitBtn.innerHTML = '<span class="loading"></span> Sending...';
-            submitBtn.disabled = true;
-            
-            // Simulate form submission (replace with actual form handling)
-            setTimeout(() => {
-                alert('Thank you for your message! I\'ll get back to you soon.');
-                this.reset();
-                submitBtn.innerHTML = originalText;
-                submitBtn.disabled = false;
-            }, 2000);
+        // Handle page visibility changes
+        document.addEventListener('visibilitychange', () => {
+            if (document.hidden) {
+                // Page is hidden, pause animations
+                document.body.classList.add('paused');
+            } else {
+                // Page is visible, resume animations
+                document.body.classList.remove('paused');
+            }
         });
 
-        // Add some interactive hover effects
-        document.querySelectorAll('.award-card, .contact-item').forEach(card => {
-            card.addEventListener('mouseenter', function() {
-                this.style.transform = 'translateY(-5px)';
+        // Service Worker Registration (for PWA capabilities)
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js')
+                    .then(registration => {
+                        console.log('SW registered: ', registration);
+                    })
+                    .catch(registrationError => {
+                        console.log('SW registration failed: ', registrationError);
+                    });
             });
-            
-            card.addEventListener('mouseleave', function() {
-                this.style.transform = 'translateY(0)';
-            });
-        });
+        }
     </script>
 </body>
 </html>
